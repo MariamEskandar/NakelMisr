@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#80ccff"
+    tools:context="animal.nakel.com.nakel.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#80ccff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="20px"
+            android:text="تسجيل الدخول"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            app:srcCompat="@drawable/main" />
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30px"
+            android:hint="اكتب الايميل الخاص بك"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30px"
+            android:hint="ادخل الرقم السرى  الخاص بك "
+
+            android:inputType="textPassword"
+            android:textAlignment="textEnd" />
+
+        <Button
+            android:id="@+id/buttonSignin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30px"
+            android:background="#0099ff"
+            android:text="تسجيل الدخول"
+            android:textSize="60px"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/Reset_Passowrd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:padding="60px"
+            android:text="هل نسيت كلمه السر"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+        <TextView
+            android:id="@+id/textViewSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="60px"
+            android:background="#4db8ff"
+            android:paddingBottom="40px"
+            android:paddingTop="40px"
+            android:text="ليس لديك حساب ؟ سجل الان "
+            android:textAlignment="center"
+            android:textSize="40px"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/GmailSingin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تسجيل الدخول عن طريق Gmail"
+            android:visibility="invisible" />
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=" اختيار المحافظه التى سوف يتم النقل منها  "
+        android:id="@+id/textView"
+        android:textStyle="bold|italic"
+        android:theme="@style/Base.CardView"
+        android:textSize="30px"
+        android:textIsSelectable="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="30px"
+        android:elegantTextHeight="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical"
+        android:phoneNumber="true"
+        android:textAlignment="center" />
+
+    <Spinner
+        android:hint="لمحافظه المنقول منها الاوزان"
+        android:id="@+id/Search_From_Wherre"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:entries="@array/country_arrays"
+        android:prompt="@string/country_prompt"
+        android:background="@drawable/input_outline"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="5px"
+        />
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="animal.nakel.com.nakel.Profile_View_Client"
+    android:background="#80ccff">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#80ccff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#80ccff"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:id="@+id/textViewUserEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="تسجيل بيانات العميل الشخصيه"
+
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:id="@+id/editTextNameh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:padding="5px"
+                android:text="الاسم"
+                android:textSize="30px" />
+
+
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:padding="5px"
+                android:layout_margin="20px"
+                />
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:id="@+id/editTextNamehh"
+                android:layout_width="match_parent"
+                android:layout_margin="20px"
+                android:layout_height="wrap_content"
+                android:text="الرقم القومى "
+                android:textSize="30px"
+                android:padding="5px"/>
+
+
+
+
+            <TextView
+                android:id="@+id/editTextNational_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_margin="20px"
+                android:padding="5px"/>
+
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:id="@+id/editTextNamehhh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="رقم الهاتف"
+                android:textSize="30px"
+                android:padding="5px"/>
+            <TextView
+                android:id="@+id/editTextPhone_number"
+                android:layout_width="match_parent"
+                android:layout_margin="20px"
+                 android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:padding="5px"/>
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/editType"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:visibility="invisible"
+                android:layout_margin="20px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                />
+
+            <ImageView
+                android:id="@+id/image_Id"
+                android:layout_width="match_parent"
+                android:layout_height="400px"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_menu_camera" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

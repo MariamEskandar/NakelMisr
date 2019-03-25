@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/Texthavey"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="50px"
+        android:gravity="center_vertical"
+        android:text="ابحث حسب المنطقه المتجها اليها الطلبيه"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textIsSelectable="true"
+        android:textSize="30px"
+        android:textStyle="bold|italic"
+        android:theme="@style/Base.CardView" />
+
+    <Spinner
+
+        android:id="@+id/SearchSinnperTowhere"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_outline"
+        android:entries="@array/country_arrays"
+        android:prompt="@string/Havey_prompet" />
+
+
+</LinearLayout>

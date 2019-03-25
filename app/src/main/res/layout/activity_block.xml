@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="animal.nakel.com.nakel.Block">
+    <!---
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Block"
+            android:textAlignment="center"
+            android:textSize="100px" />
+    -->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30px"
+                android:background="#0099ff"
+                android:gravity="center"
+                android:padding="5px"
+                android:text="هذا المستخدم موقوف مؤقتآ رجاءالمحاوله خلال 24 ساعه او اتصل بالاداره لاعاده تشغيل المستخدم "
+                android:textSize="60px" />
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_margin="30px"
+                android:layout_marginTop="30px"
+                android:layout_weight="1"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:text="01012141712"
+                android:textSize="50px" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_margin="30px"
+                android:layout_marginTop="30px"
+
+                android:layout_weight="1"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:text="01110909405"
+                android:textSize="50px" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_margin="30px"
+                android:layout_marginTop="30px"
+                android:layout_weight="1"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:text="01202194721"
+                android:textSize="50px" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30px"
+                android:layout_marginTop="30px"
+                android:layout_weight="1"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:text="Egypt.Trans@yahoo.com"
+                android:textSize="50px" />
+
+            <Button
+                android:id="@+id/Facebook"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="30px"
+                android:background="@drawable/facebook"
+                android:paddingLeft="30px"
+                android:paddingRight="30px" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

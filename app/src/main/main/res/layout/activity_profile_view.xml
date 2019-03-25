@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80ccff"
+    tools:context="animal.nakel.com.nakel.ProfileView">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80ccff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80ccff"
+            android:orientation="vertical"
+            android:padding="10px">
+
+
+            <TextView
+                android:id="@+id/textViewUserEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10px"
+                android:background="#80ccff"
+                android:padding="20px"
+                android:text="تسجيل بيانات السائق الشخصيه"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="40px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editTextNameh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:padding="20px"
+                android:text="الاسم"
+                android:textSize="30px"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:padding="20px"
+                android:textSize="40px"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/editTextNational_numberh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:padding="20px"
+                android:text="الرقم القومى "
+                android:textSize="30px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editTextNational_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:padding="10px"
+                android:textSize="40px"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/editTextPhone_numberا"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:padding="20px"
+                android:text="رقم الهاتف "
+                android:textSize="30px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editTextPhone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:padding="20px"
+                android:textSize="40px"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/editTextCar_Numberا"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:cursorVisible="false"
+                android:padding="20px"
+                android:text="رقم السياره"
+                android:textSize="30px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editTextCar_Number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:cursorVisible="false"
+                android:padding="20px"
+                android:textSize="40px"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/editTextLicense_numberh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:padding="20px"
+                android:text="رقم الرخصه"
+                android:textSize="30px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editTextLicense_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:padding="20px"
+                android:textSize="40px"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/imageViewDownload2"
+                android:layout_width="match_parent"
+                android:layout_height="500px"
+                android:layout_margin="10px"
+                android:padding="20px"
+                android:textSize="40px"
+                android:textStyle="bold"
+                app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+
+
+            <TextView
+                android:id="@+id/editType"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="10px"
+                android:padding="20px"
+                android:textSize="40px"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/editPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="10px"
+                android:padding="20px"
+                android:textSize="40px"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

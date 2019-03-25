@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80ccff"
+    tools:context="animal.nakel.com.nakel.Type_Deriver_Client">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80ccff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80ccff"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/MessageWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#b3e0ff"
+                android:padding="30px"
+                android:text="اهلا بكم فى خدمه نقل مصر"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/button_Client"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="50px"
+                android:background="#0099ff"
+                android:text="العميل"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/button_Driver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="50px"
+                android:background="#0099ff"
+                android:text="السائق"
+                android:textSize="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/Button_Client" />
+
+
+            <TextView
+                android:id="@+id/mmm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#80ccff"
+                android:padding="20px"
+
+                android:text="الرجاء التاكد من اتصالك بالانترنت -اذا كانت هذه اول مره تسجل فيها عليك اختيار طريقه التسجيل كسائق او عميل - اذا سجلت بياناتك من قبل عليك الانتظارحتى التاكد من بيانات و سوف تنقل الى صفحه الرئيسيه فى الحال"
+                android:textAlignment="center"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

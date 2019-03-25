@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="animal.nakel.com.nakel.ProfileActivity"
+
+    android:background="#80ccff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#80ccff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80ccff"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/textViewUserEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30px"
+                android:layout_gravity="center_horizontal"
+                android:text="تسجيل بيانات السائق الشخصيه"
+
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_margin="30px"
+                android:layout_marginRight="20px"
+                android:hint="ادخل اسمك بالكامل" />
+
+
+            <EditText
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:id="@+id/editTextNational_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_margin="30px"
+                android:maxLength="14"
+                android:hint=" ادخل الرقم القومى الخاص بك " />
+
+            <EditText
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:id="@+id/editTextPhone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="11"
+                android:layout_margin="30px"
+                android:hint="ادخل رقم الهاتف الخاص بك " />
+
+            <EditText
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:id="@+id/editTextCar_Number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:layout_margin="30px"
+                android:hint="ادخل رقم السياره" />
+
+            <EditText
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_margin="30px"
+                android:id="@+id/editTextLicense_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ادخل رقم الرخصه " />
+
+
+            <ImageView
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:id="@+id/imageViewDownload5555"
+                android:layout_width="match_parent"
+                android:layout_height="400px"
+                android:layout_margin="30px"
+                app:srcCompat="@drawable/ic_local_shipping_black_24dp" />
+
+
+            <Button
+                android:id="@+id/chooseImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:background="#0099ff"
+                android:layout_margin="30px"
+                android:text="لا يمكن تسجيل البيانات دون رفع صوره السياره " />
+
+
+            <ImageView
+                android:id="@+id/image_Id"
+                android:layout_width="match_parent"
+                android:layout_margin="30px"
+                android:layout_height="400px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                app:srcCompat="@drawable/ic_menu_camera" />
+
+
+            <Button
+                android:id="@+id/chooseImgId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:background="#0099ff"
+                android:layout_margin="30px"
+                android:text="لا يمكن تسجيل البيانات دون رفع صوره البطاقه الشخصيه " />
+
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:background="#0099ff"
+                android:layout_margin="30px"
+                android:text="حفظ البيانات الشخصيه" />
+
+
+            <Button
+                android:id="@+id/buttonLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#0099ff"
+                android:layout_margin="30px"
+                android:text="تسجيل الخروج " />
+
+
+            <EditText
+                android:id="@+id/editType"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="30px"
+                android:visibility="invisible" />
+            <EditText
+                android:id="@+id/editBlock"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="30px"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/editPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="30px"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/editPhoto_id"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="30px"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

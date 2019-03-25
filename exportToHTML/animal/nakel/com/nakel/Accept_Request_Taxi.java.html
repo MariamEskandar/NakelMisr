@@ -1,0 +1,176 @@
+<html>
+<head>
+<title>Accept_Request_Taxi.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { color: rgb(0,0,0); }
+.s2 { color: rgb(0,128,0); font-weight: bold; }
+.s3 { color: rgb(128,128,128); font-style: italic; }
+.s4 { color: rgb(0,0,255); }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+Accept_Request_Taxi.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">package </span><span class="s1">animal.nakel.com.nakel; 
+ 
+</span><span class="s0">import </span><span class="s1">android.content.Intent; 
+</span><span class="s0">import </span><span class="s1">android.support.v7.app.AppCompatActivity; 
+</span><span class="s0">import </span><span class="s1">android.os.Bundle; 
+</span><span class="s0">import </span><span class="s1">android.support.v7.widget.LinearLayoutManager; 
+</span><span class="s0">import </span><span class="s1">android.support.v7.widget.RecyclerView; 
+</span><span class="s0">import </span><span class="s1">android.view.View; 
+</span><span class="s0">import </span><span class="s1">android.widget.TextView; 
+</span><span class="s0">import </span><span class="s1">android.widget.Toast; 
+ 
+</span><span class="s0">import </span><span class="s1">com.firebase.ui.database.FirebaseRecyclerAdapter; 
+</span><span class="s0">import </span><span class="s1">com.google.firebase.auth.FirebaseAuth; 
+</span><span class="s0">import </span><span class="s1">com.google.firebase.auth.FirebaseUser; 
+</span><span class="s0">import </span><span class="s1">com.google.firebase.database.DatabaseReference; 
+</span><span class="s0">import </span><span class="s1">com.google.firebase.database.FirebaseDatabase; 
+</span><span class="s0">import </span><span class="s1">com.google.firebase.database.Query; 
+ 
+</span><span class="s0">public class </span><span class="s1">Accept_Request_Taxi </span><span class="s0">extends </span><span class="s1">AppCompatActivity { 
+ 
+    </span><span class="s0">private </span><span class="s1">RecyclerView mRecycler_Accept_Request; 
+    </span><span class="s0">private </span><span class="s1">DatabaseReference mDatabaseClienAccepttRequest; 
+    </span><span class="s0">private </span><span class="s1">DatabaseReference mDatabaseTaxiAcceptRequest; 
+    </span><span class="s0">private </span><span class="s1">FirebaseAuth mAuth; 
+    </span><span class="s0">private </span><span class="s1">FirebaseUser mCurrentuser; 
+ 
+    @Override 
+    </span><span class="s0">protected void </span><span class="s1">onCreate(Bundle savedInstanceState) { 
+        </span><span class="s0">super</span><span class="s1">.onCreate(savedInstanceState); 
+        setContentView(R.layout.activity_accept__request__taxi); 
+        mRecycler_Accept_Request = (RecyclerView) findViewById(R.id.Recycler_Accept_Request_Taxi); 
+        mRecycler_Accept_Request.setHasFixedSize(</span><span class="s0">true</span><span class="s1">); 
+        mRecycler_Accept_Request.setLayoutManager(</span><span class="s0">new </span><span class="s1">LinearLayoutManager(</span><span class="s0">this</span><span class="s1">)); 
+ 
+ 
+        mAuth = FirebaseAuth.getInstance(); 
+        mCurrentuser = mAuth.getCurrentUser(); 
+        mDatabaseClienAccepttRequest = FirebaseDatabase.getInstance().getReference().child(</span><span class="s2">&quot;AccpetRequest&quot;</span><span class="s1">); 
+ 
+    } 
+ 
+ 
+    </span><span class="s0">public void </span><span class="s1">onStart() { 
+        </span><span class="s0">super</span><span class="s1">.onStart(); 
+ 
+ 
+        mRecycler_Accept_Request = (RecyclerView) findViewById(R.id.Recycler_Accept_Request_Taxi); 
+        mRecycler_Accept_Request.setHasFixedSize(</span><span class="s0">true</span><span class="s1">); 
+        mRecycler_Accept_Request.setLayoutManager(</span><span class="s0">new </span><span class="s1">LinearLayoutManager(</span><span class="s0">this</span><span class="s1">)); 
+ 
+        Query query = mDatabaseClienAccepttRequest.orderByChild(</span><span class="s2">&quot;Taxe_uid&quot;</span><span class="s1">).equalTo(mCurrentuser.getUid()); 
+ 
+        FirebaseRecyclerAdapter&lt;AcceptRequest, Accept_Request.Accept_RequestViweHolder&gt; firebaseRecyclerAdapter = </span><span class="s0">new </span><span class="s1">FirebaseRecyclerAdapter&lt;AcceptRequest, Accept_Request.Accept_RequestViweHolder&gt;( 
+                AcceptRequest.</span><span class="s0">class</span><span class="s1">, 
+                R.layout.accept_request_row, 
+                Accept_Request.Accept_RequestViweHolder.</span><span class="s0">class</span><span class="s1">, 
+                </span><span class="s3">//mDatabaseClienAccepttRequest</span><span class="s1"> 
+                query 
+        ) { 
+ 
+            @Override 
+            </span><span class="s0">protected void </span><span class="s1">populateViewHolder(Accept_Request.Accept_RequestViweHolder viewHolder, </span><span class="s0">final </span><span class="s1">AcceptRequest model, </span><span class="s0">int </span><span class="s1">position) { 
+ 
+                viewHolder.setPost_id(model.getPost_id()); 
+                viewHolder.setClient_uid(model.getClient_uid()); 
+                viewHolder.setTaxe_uid(model.getTaxe_uid()); 
+                viewHolder.setPrice(model.getPrice()); 
+                viewHolder.setTaxi_Phone(model.getTaxi_Phone()); 
+ 
+                viewHolder.Post_id.setOnClickListener(</span><span class="s0">new </span><span class="s1">View.OnClickListener() { 
+                    @Override 
+                    </span><span class="s0">public void </span><span class="s1">onClick(View v) { 
+                        Toast.makeText(Accept_Request_Taxi.</span><span class="s0">this</span><span class="s1">,</span><span class="s2">&quot;العرض&quot;</span><span class="s1">,Toast.LENGTH_LONG).show(); 
+                        Intent intent=</span><span class="s0">new </span><span class="s1">Intent(Accept_Request_Taxi.</span><span class="s0">this</span><span class="s1">,SinglePost.</span><span class="s0">class</span><span class="s1">); 
+                        intent.putExtra(</span><span class="s2">&quot;blog_id&quot;</span><span class="s1">,model.getPost_id()); 
+                        startActivity(intent); 
+                    } 
+                }); 
+ 
+ 
+                viewHolder.client.setOnClickListener(</span><span class="s0">new </span><span class="s1">View.OnClickListener() { 
+                    @Override 
+                    </span><span class="s0">public void </span><span class="s1">onClick(View v) { 
+                        Intent intent = </span><span class="s0">new </span><span class="s1">Intent(Accept_Request_Taxi.</span><span class="s0">this</span><span class="s1">, Public_profile.</span><span class="s0">class</span><span class="s1">); 
+ 
+                        intent.putExtra(</span><span class="s2">&quot;mPublic_Profile_tkey&quot;</span><span class="s1">, model.getClient_uid()); 
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); 
+                        startActivity(intent); 
+                    } 
+                }); 
+                viewHolder.Taxi_id.setOnClickListener(</span><span class="s0">new </span><span class="s1">View.OnClickListener() { 
+                    @Override 
+                    </span><span class="s0">public void </span><span class="s1">onClick(View v) { 
+                      Intent intent = </span><span class="s0">new </span><span class="s1">Intent(Accept_Request_Taxi.</span><span class="s0">this</span><span class="s1">, Public_profile.</span><span class="s0">class</span><span class="s1">); 
+                        intent.putExtra(</span><span class="s2">&quot;mPublic_Profile_tkey&quot;</span><span class="s1">, model.getTaxe_uid()); 
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); 
+                        startActivity(intent); 
+                    } 
+                }); 
+            } 
+        }; 
+        mRecycler_Accept_Request.setAdapter(firebaseRecyclerAdapter); 
+    } 
+ 
+    </span><span class="s0">public static class </span><span class="s1">Accept_RequestViweHolder </span><span class="s0">extends </span><span class="s1">RecyclerView.ViewHolder { 
+ 
+        View mView; 
+        TextView Taxi_id ; 
+        TextView client; 
+        TextView Post_id; 
+        </span><span class="s0">public </span><span class="s1">Accept_RequestViweHolder(View itemViwe) { 
+ 
+            </span><span class="s0">super</span><span class="s1">(itemViwe); 
+            mView = itemView; 
+            Taxi_id = (TextView) mView.findViewById(R.id.Accept_Rreqest_Taxe_id); 
+            client = (TextView) mView.findViewById(R.id.Accept_Rreqest_UserName_id); 
+            Post_id = (TextView) mView.findViewById(R.id.Accept_Rreqest_Post_Id); 
+        } 
+ 
+        </span><span class="s0">public void </span><span class="s1">setClient_uid(String client_uid) { 
+            TextView E_Accept_Rreqest_UserName_id = (TextView) mView.findViewById(R.id.Accept_Rreqest_UserName_id); 
+            </span><span class="s3">//  DateUtils.getRelativeTimeSpanString(postTime,c.getTime() ,DateUtils.MINUTE_IN_MILLIS);</span><span class="s1"> 
+            E_Accept_Rreqest_UserName_id.setText(client_uid); 
+        } 
+ 
+ 
+        </span><span class="s0">public void </span><span class="s4">7</span><span class="s1">YYYYYYYYYYYYYYYYYYYYYYYYTTTTTTTTTMJK65555555555,L6ER90setPost_id(String post_id) { 
+            TextView E_Accept_Rreqest_Post_Id = (TextView) mView.findViewById(R.id.Accept_Rreqest_Post_Id); 
+            </span><span class="s3">//  DateUtils.getRelativeTimeSpanString(postTime,c.getTime() ,DateUtils.MINUTE_IN_MILLIS);</span><span class="s1"> 
+            E_Accept_Rreqest_Post_Id.setText(post_id); 
+        } 
+ 
+        </span><span class="s0">public void </span><span class="s1">setPrice(String price) { 
+            TextView E_Accept_Rreqest_Money = (TextView) mView.findViewById(R.id.Accept_Rreqest_Money); 
+            </span><span class="s3">//  DateUtils.getRelativeTimeSpanString(postTime,c.getTime() ,DateUtils.MINUTE_IN_MILLIS);</span><span class="s1"> 
+            E_Accept_Rreqest_Money.setText(price); 
+        } 
+ 
+        </span><span class="s0">public void </span><span class="s1">setTaxe_uid(String taxe_uid) { 
+            TextView E_Accept_Rreqest_Taxe_id = (TextView) mView.findViewById(R.id.Accept_Rreqest_Taxe_id); 
+            </span><span class="s3">//  DateUtils.getRelativeTimeSpanString(postTime,c.getTime() ,DateUtils.MINUTE_IN_MILLIS);</span><span class="s1"> 
+            E_Accept_Rreqest_Taxe_id.setText(taxe_uid); 
+        } 
+ 
+        </span><span class="s0">public void </span><span class="s1">setTaxi_Phone(String taxe_phone) { 
+            TextView E_Accept_Rreqest_Taxe_Phone_Number = (TextView) mView.findViewById(R.id.Accept_Rreqest_Taxe_Phone_Number); 
+            </span><span class="s3">//  DateUtils.getRelativeTimeSpanString(postTime,c.getTime() ,DateUtils.MINUTE_IN_MILLIS);</span><span class="s1"> 
+            E_Accept_Rreqest_Taxe_Phone_Number.setText(taxe_phone); 
+        } 
+ 
+ 
+    } 
+ 
+}</span></pre>
+</body>
+</html>

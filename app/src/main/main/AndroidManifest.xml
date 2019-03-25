@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="animal.nakel.com.nakel">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/main"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".Post_Activity" />
+        <activity android:name=".SinglePost" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".ProfileView" />
+        <activity android:name=".Type_Deriver_Client" />
+        <activity android:name=".PostsMain" />
+        <activity android:name=".ProfileClientActivity" />
+        <activity android:name=".Accept_Request" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Call_Us" />
+        <activity
+            android:name=".Public_profile"
+            android:label="@string/title_activity_public_profile"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Comment_only"
+            android:label="@string/title_activity_comment_only"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Public_Profile_Price" />
+        <activity android:name=".Profile_View_Client" />
+        <activity android:name=".Show_Number" />
+        <activity android:name=".Accept_Request_Taxi" />
+        <activity android:name=".Public_Profile_Taxi" />
+        <activity android:name=".Call_Us"></activity>
+    </application>
+
+</manifest>

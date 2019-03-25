@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@mipmap/ic_add_white_24dp"
+            android:title="أضافه طلب " />
+
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="كل العروض" />
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@android:drawable/star_big_off"
+            android:title="عروضى" />
+
+
+    </group>
+
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_done_black_24dp"
+            android:title="العروض التى وافقت عليها" />
+
+
+    <!--
+    <item
+        android:id="@+id/app_bar_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/input_outline"
+        android:title="anything" />
+    <item android:title="Communicate">
+-->
+<item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_attach_money_black_24dp"
+                android:title="يجب التنفيذ " />
+
+    <item
+        android:id="@+id/nav_send"
+        android:icon="@drawable/ic_menu_send"
+        android:title="أتصل بينا " />
+
+    <!--
+        <menu>
+
+                <item
+                    android:id="@+id/nav_send"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Send" />
+            </menu>
+        </item>
+    -->
+</menu>

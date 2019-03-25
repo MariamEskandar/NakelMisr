@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_add"
+        android:text="add"
+        android:title="اضافه طلب"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/Edit_Profile"
+        android:title="تعديل البيانات "
+
+        />
+    <item
+        android:id="@+id/View_Profile"
+        android:title="عرض البيانات"
+        />
+    <item
+        android:id="@+id/Logout"
+        android:title="تسجيل الخروج "
+        />
+</menu>

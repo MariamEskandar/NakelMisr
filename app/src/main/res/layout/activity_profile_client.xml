@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#80ccff"  >
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="#80ccff"   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:background="#80ccff"  >
+
+
+        <TextView
+            android:id="@+id/textViewUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="البيانات الشخصيه "
+            android:layout_margin="30px"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30px"
+            android:hint="ادخل الاسم بالكامل"
+            android:inputType="text" />
+
+
+        <EditText
+            android:id="@+id/editTextNational_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30px"
+            android:hint="ادخل رقم البطاقه "
+            android:inputType="number"
+            android:maxLength="14" />
+
+        <EditText
+            android:id="@+id/editTextPhone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30px"
+            android:hint="ادخل رقم التلفون الخاص بك "
+            android:inputType="number"
+            android:maxLength="11" />
+
+
+        <ImageView
+            android:id="@+id/image_Id"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:visibility="visible"
+            android:layout_margin="30px"
+            app:srcCompat="@drawable/ic_menu_camera" />
+
+
+        <Button
+            android:id="@+id/chooseImgId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:layout_margin="30px"
+            android:background="#0099ff"
+            android:text="لا يمكن تسجيل البيانات دون رفع صوره البطاقه الشخصيه " />
+
+
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:layout_margin="30px"
+            android:background="#0099ff"
+            android:text="حفظ البيانات الشخصيه " />
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="30px"
+            android:layout_marginTop="50px"
+            android:background="#0099ff"
+            android:text="تسجيل الخروج " />
+
+
+
+
+        <EditText
+            android:id="@+id/editPhoto_id"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="30px"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/editType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30px"
+            android:visibility="invisible" />
+   />
+</LinearLayout>
+   </ScrollView>
+    </LinearLayout>
+

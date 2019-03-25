@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="20px">
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:text="عنوان  "
+                android:id="@+id/Single_post_Post_title_BlogViwe"
+                android:textSize="70px"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_margin="5px"
+                android:textIsSelectable="false"
+                android:theme="@style/AppTheme"
+                android:focusableInTouchMode="true"
+                android:forceHasOverlappingRendering="false"
+                android:layout_gravity="left"
+                android:textColor="#54b9fc" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2">
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="وقت نشر العرض"
+                    android:id="@+id/Single_post_PostTime"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="40px"
+                    android:theme="@android:style/Widget.Holo.Light"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="نشر فى "
+                    android:id="@+id/textpublishpost"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textSize="40px"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="تفاصيل العرض"
+                android:id="@+id/Single_post_Description_title_BlogViwe"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="50px"
+                android:textIsSelectable="true"
+                android:longClickable="false"
+                android:linksClickable="false"
+                android:nestedScrollingEnabled="false"
+                android:textColor="#054359"
+                android:layout_gravity="right" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="الوزن"
+                    android:id="@+id/Single_post_Weight"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="40px"
+                    android:layout_gravity="left"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:text="الوزن"
+                    android:id="@+id/textKilogram"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textSize="40px"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="40px"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Single_post_MonyOffer_title_BlogViwe"
+                    android:padding="10dp"
+                    android:pointerIcon="none"
+                    android:layout_weight="1"
+                    android:text="السعر" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="السعر"
+                    android:id="@+id/textoffere"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textSize="40px"
+                    android:layout_weight="1"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="20px" />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="المحافظه"
+                    android:textStyle="bold"
+                    android:textSize="40px"
+                    android:id="@+id/Single_post_Fromwhere_title_BlogViwe"
+                    android:padding="10dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="من محافظه "
+                    android:id="@+id/textfromwhre"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textSize="40px"
+                    android:layout_weight="1"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="20px" />
+
+
+</LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="2">
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1المحافظه"
+                        android:textStyle="bold"
+                        android:textSize="40px"
+                        android:id="@+id/Single_post_TopWhere_title_BlogViwe"
+                        android:padding="10dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="الى محافظه "
+                        android:id="@+id/texttowhre"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textSize="40px"
+                        android:layout_weight="1"
+                        android:layout_gravity="left"
+                        android:layout_marginRight="20px" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="left">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="يوم تنفيذ طلب"
+                    android:id="@+id/Single_post_textdaymove"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textSize="40px"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="يوم نقل البضائع "
+                    android:id="@+id/Single_post_Single_post_DaytoMove"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textSize="40px"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Acccept_Done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="40px"
+                android:padding="10dp"
+                android:text="لقد وافقت على احد العروض بالفعل  "
+                android:visibility="invisible"
+                android:background="#ffb3b3"
+                />
+
+            <Button
+                android:id="@+id/Remove_Post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="الغاءالطلب "
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="40px"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/CommentOnly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="شاهد العروض"
+                android:visibility="invisible"
+                android:textStyle="bold"
+                android:textSize="40px"/>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="left">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/Commentt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_outline"
+                    android:hint="اضف سعر خاص بك "
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textSize="40px"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <Button
+                    android:visibility="invisible"
+                    android:id="@+id/ButtonComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="اضغط هنا ليصل سعرك للعميل "
+                    android:padding="10dp"
+                    android:textSize="40px"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Comment_Done"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffb3b3"
+                        android:padding="10dp"
+                        android:text=" لقد وضعت سعر من قبل لا يمكنك وضع سعر اخر "
+                        android:textStyle="bold"
+                        android:textSize="40px"
+                        android:visibility="invisible" />
+                    <TextView
+
+                        android:id="@+id/Client_Done"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="40px"
+                        android:padding="10dp"
+                        android:text="انت عميل لا يمكنك وضع سعر "
+                        android:visibility="invisible"
+                        android:background="#ffb3b3"
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
